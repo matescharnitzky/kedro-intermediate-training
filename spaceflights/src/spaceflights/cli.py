@@ -179,3 +179,4 @@ def inspect():
     """Inspect the nodes in a pipeline."""
     nodes = pipelines["__default__"].nodes
     # TODO: For each node use click.echo to output the inspection result to the console.
+

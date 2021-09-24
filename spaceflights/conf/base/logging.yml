@@ -40,11 +40,11 @@ handlers:
         base_dir: logs/journals
         formatter: json_formatter
 
-#    inspect_handler:
-#        class: kedro.extras.logging.ColorHandler
-#        level: INFO
-#        formatter: simple
-#        stream: ext://sys.stdout
+    inspect_handler:
+        class: kedro.extras.logging.ColorHandler
+        level: INFO
+        formatter: simple
+        stream: ext://sys.stdout
 
 loggers:
     anyconfig:
@@ -67,10 +67,10 @@ loggers:
         handlers: [journal_file_handler]
         propagate: no
 
-#    spaceflights:
-#        level: INFO
-#        handlers: [inspect_handler]
-#        propagate: no
+    spaceflights:
+        level: INFO
+        handlers: [inspect_handler]
+        propagate: no
 
 root:
     level: INFO
